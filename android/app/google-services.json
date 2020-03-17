@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "632010778689",
+    "firebase_url": "https://lojavirtual-f50ea.firebaseio.com",
+    "project_id": "lojavirtual-f50ea",
+    "storage_bucket": "lojavirtual-f50ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632010778689:android:21d965fa3099c4fdc2fec0",
+        "android_client_info": {
+          "package_name": "br.com.simoes.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632010778689-5vau7sv03ohpq5sp3m9d8020c8g21ogl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEIGpvL0-iFzmg6Umqd_dl8bQELLrik4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632010778689-5vau7sv03ohpq5sp3m9d8020c8g21ogl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

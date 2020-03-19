@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeTab extends StatelessWidget {
@@ -26,12 +28,43 @@ class HomeTab extends StatelessWidget {
               floating: true,
               snap: true,
               backgroundColor: Colors.transparent,
-              elevation: 1,
+              elevation: 1.0,
               flexibleSpace: FlexibleSpaceBar(
                 title: const Text("novidade"),
                 centerTitle: true,
               ),
-            )
+            ),
+
+            FutureBuilder<QuerySnapshot>(
+              future: Firestore.instance.collection("home").orderBy("pos").getDocuments(),
+              // ignore: missing_return
+              builder: (context, snapshot){
+                if(!snapshot.hasData){
+                  return SliverToBoxAdapter(
+                    child: Container(
+                      height: 200,
+                      alignment: Alignment.center,
+                      // ignore: missing_return
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    ),
+                  );
+                }
+                else {
+                  print(snapshot.data.documents.length);
+                  return SliverToBoxAdapter(
+                    child: Container(
+                      height: 200,
+                      alignment: Alignment.center,
+                      // ignore: missing_return
+                      child: Container()
+                    ),
+                  );
+                }
+              },
+            ),
+
           ],
         )
       ],

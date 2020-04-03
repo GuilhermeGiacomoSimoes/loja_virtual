@@ -6,10 +6,11 @@ The app consists of a fictional virtual clothing store.
 
 
 
+# bar transparent
 ![Bar rose](./evolution_images/image_1.jpeg)
 
-<span> bar transparent </span>
+# bar transparent
 <img src="./evolution_images/image_2.jpeg" style="max-width: 300px; max-height: 300px;"/>
 
-<span> drawer meny </span>
+# bar transparent
 <img src="./evolution_images/menu_drawer.png" style="max-width: 300px; max-height: 300px;">
